@@ -6,7 +6,7 @@ Currently I am on **Linux Mint Xfce 21.1** and these are my dotfiles
 
 Just do:
 ```bash
-git clone https://github.com/Sengolda/dotfiles && sudo bash setup.sh
+git clone https://github.com/Sengolda/dotfiles && cd dotfiles && sudo bash setup.sh
 ```
 
 To configure git email and username do:
