@@ -1,4 +1,4 @@
-mkdir -p .config
+mkdir -p ~/.config
 
 # Setup bash files
 cp bash/.bashrc ~/.bashrc
