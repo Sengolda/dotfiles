@@ -5,6 +5,7 @@ mkdir -p ~/.config
 # Setup bash files
 cp bash/.bashrc ~/.bashrc
 cp bash/.bash_aliases ~/.bash_aliases
+echo "Sengolda's dotfiles: Setup bash config"
 
 # Install snap
 cp /etc/apt/preferences.d/nosnap.pref ~/Desktop/nosnap.pref
