@@ -37,7 +37,11 @@ git clone https://github.com/arialdomartini/oh-my-git.git ~/.oh-my-git && echo s
 echo "Sengolda's dotfiles: Installed oh-my-git"
 
 # Install Visual Studio Code
-#snap install code --classic
+snap install code --classic
+
+# Install Deno
+curl -fsSL https://deno.land/x/install/install.sh | sh
+echo "Sengolda's dotfiles: Deno installed"
 
 echo "Sengolda's dotfiles are all setup on your system and good to go"
 source ~/.bashrc
