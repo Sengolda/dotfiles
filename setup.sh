@@ -1,5 +1,9 @@
 mkdir -p .config
 
+# Setup bash files
+cp bash/.bashrc ~/.bashrc
+cp bash/.bash_aliases ~/.bash_aliases
+
 # Install snap
 cp /etc/apt/preferences.d/nosnap.pref ~/Desktop/nosnap.pref
 rm -f /etc/apt/preferences.d/nosnap.pref
