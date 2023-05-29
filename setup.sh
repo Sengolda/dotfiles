@@ -1,3 +1,5 @@
+mkdir -p .config
+
 # Install snap
 cp /etc/apt/preferences.d/nosnap.pref ~/Desktop/nosnap.pref
 rm -f /etc/apt/preferences.d/nosnap.pref
@@ -42,6 +44,10 @@ snap install code --classic
 # Install Deno
 curl -fsSL https://deno.land/x/install/install.sh | sh
 echo "Sengolda's dotfiles: Deno installed"
+
+# Install Neofetch
+apt-get install neofetch
+cp neofetch/config.conf ~/.config/neofetch/config.conf
 
 echo "Sengolda's dotfiles are all setup on your system and good to go"
 source ~/.bashrc
