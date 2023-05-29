@@ -9,4 +9,10 @@ Just do:
 git clone https://github.com/Sengolda/dotfiles && sudo bash setup.sh
 ```
 
-To configure git more 
+To configure git email and username do:
+```bash
+git config --global user.name [your username]
+git config --global user.email [your email]
+```
+
+To use git and github you need to setup ssh keys read how to do that [here](https://www.freecodecamp.org/news/git-ssh-how-to/)
