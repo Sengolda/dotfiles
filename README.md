@@ -8,3 +8,5 @@ Just do:
 ```bash
 git clone https://github.com/Sengolda/dotfiles && sudo bash setup.sh
 ```
+
+To configure git more 

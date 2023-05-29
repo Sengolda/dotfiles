@@ -17,10 +17,9 @@ nvm install node --lts # latest LTS version basically
 node install -g pnpm
 echo "Sengolda's dotfiles: Setup Node, NVM and PNPM"
 
-# Install git
-snap install git
+# Setup git
 cp git/.gitconfig ~/.gitconfig
-echo "Sengolda's dotfiles: Git installed"
+echo "Sengolda's dotfiles: Git setup"
 
 # Install python3
 apt-get install python3 python3-dev python3-pip python3-setuptools
