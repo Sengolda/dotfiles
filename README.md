@@ -8,6 +8,8 @@ Just do:
 ```bash
 git clone https://github.com/Sengolda/dotfiles && cd dotfiles && sudo bash setup.sh
 ```
+Then just set your wallpaper to the one in [wallpapers](wallpapers/vibrant-05.jpg)
+
 
 To configure git email and username do:
 ```bash
