@@ -10,4 +10,4 @@ alias reloadbash="source ~/.bashrc"
 # package manager  things
 alias pip="pip -vv"
 alias deno="~/.deno/bin/deno"
-alias apt-purge="apt-remove --purge"
+alias apt-purge="apt remove --purge"
