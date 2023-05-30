@@ -8,6 +8,14 @@ Just do:
 ```bash
 git clone https://github.com/Sengolda/dotfiles && cd dotfiles && sudo bash setup.sh
 ```
+
+You have to also set kitty as the default terminal, to do that run:
+
+```bash
+sudo update-alternatives --config x-terminal-emulator
+```
+Then select one that says has `kitty` in it, there can be multiple anyone is fine.
+
 Then just set your wallpaper to the one in [wallpapers](wallpapers/vibrant-05.jpg)
 
 
