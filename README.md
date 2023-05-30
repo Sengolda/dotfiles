@@ -16,3 +16,7 @@ git config --global user.email [your email]
 ```
 
 To use git and github you need to setup ssh keys read how to do that [here](https://www.freecodecamp.org/news/git-ssh-how-to/)
+
+
+### Screenshots
+![image](screenshot.png)
