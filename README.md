@@ -15,6 +15,10 @@ You have to also set kitty as the default terminal, to do that run:
 sudo update-alternatives --config x-terminal-emulator
 ```
 Then select one that has `kitty` in it, there can be multiple anyone is fine.
+If you do not see any run this command and do the command above again:
+```bash
+ sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/local/bin/kitty 50
+```
 
 Then just set your wallpaper to the one in [wallpapers](wallpapers/vibrant-05.jpg)
 
