@@ -15,6 +15,8 @@ git config --global user.name [your username]
 git config --global user.email [your email]
 ```
 
+Then just set your wallpaper to the one in [wallpapers](wallpapers/vibrant-05.jpg)
+
 To use git and github you need to setup ssh keys read how to do that [here](https://www.freecodecamp.org/news/git-ssh-how-to/)
 
 
