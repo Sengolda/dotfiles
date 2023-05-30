@@ -14,6 +14,29 @@ apt-get install snapd
 snap install core
 echo "Sengolda's dotfiles: Setup snap"
 
+# Setup kitty
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin launch=n
+ln -s ~/.local/kitty.app/bin/kitty /usr/local/bin/
+ln -s /usr/local/bin/kitty /usr/bin/kitty
+
+cp ~/.local/kitty.app/share/applications/kitty.desktop ~/.local/share/applications/
+cp ~/.local/kitty.app/share/applications/kitty-open.desktop ~/.local/share/applications/
+sed -i "s|Icon=kitty|Icon=/home/$USER/.local/kitty.app/share/icons/hicolor/256x256/apps/kitty.png|g" ~/.local/share/applications/kitty*.desktop
+sed -i "s|Exec=kitty|Exec=/home/$USER/.local/kitty.app/bin/kitty|g" ~/.local/share/applications/kitty*.desktop
+
+cp ~/.local/kitty.app/share/applications/kitty.desktop ~/Desktop
+sed -i "s|Icon=kitty|Icon=/home/$USER/.local/kitty.app/share/icons/hicolor/256x256/apps/kitty.png|g" ~/Desktop/kitty*.desktop
+sed -i "s|Exec=kitty|Exec=/home/$USER/.local/kitty.app/bin/kitty|g" ~/Desktop/kitty*.desktop
+
+gio set ~/Desktop/kitty*.desktop metadata::trusted true
+chmod a+x ~/Desktop/kitty*.desktop
+mkdir -p ~/.config/kitty
+cp kitty/kitty.conf ~/.config/kitty/kitty.conf
+echo "Sengolda's dotfiles: Setup kitty terminal"
+
+
+
+
 # Install starship
 snap install starship
 cp starship/starship.toml ~/.config/starship.toml
